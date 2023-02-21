@@ -1,4 +1,4 @@
-import { prev } from '../src/members.js';
+import { prev } from '../../src/members.js';
 
 export default function Next() {
     var referer = document.referrer;

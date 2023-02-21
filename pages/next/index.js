@@ -1,4 +1,4 @@
-import { next } from '../src/members.js';
+import { next } from '../../src/members.js';
 
 export default function Next() {
     var referer = document.referrer;
@@ -7,7 +7,7 @@ export default function Next() {
         <>
         {next.has(referer) ? (
             <div>
-                
+
             </div>
         ) : (
             <div>
