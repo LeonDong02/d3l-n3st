@@ -2,6 +2,7 @@ const members = new Map();
 members.set('HOME', 'https://d3l-n3st.vercel.app/');
 members.set('LEON', 'https://www.leondong.com/');
 members.set('TRI', 'https://www.triho.dev/');
+members.set('EDDY', 'https://www.eddyguo.ca/');
 
 // ADD YOUR NAME AND LINK ABOVE
 
