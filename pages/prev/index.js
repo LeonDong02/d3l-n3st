@@ -1,13 +1,13 @@
 import { prev } from '../../src/members.js';
 
-export default function Home({ context }) {
-    var referer = context.req.headers.referrer;
+export default function Home(context) {
+    var referrer = context.req.headers.referrer;
 
     return (
         <>
-        {prev.has(referer) ? (
+        {prev.has(referrer) ? (
             <div>
-                success
+                {referrer}
             </div>
         ) : (
             <div>

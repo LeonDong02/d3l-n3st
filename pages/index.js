@@ -32,8 +32,10 @@ export default function Home() {
         <main>
             <p><a>&lt;</a>d3l n3st webring!<a>&gt;</a></p>
             <p>to join, make a pull request <a href="https://github.com/LeonDong02/d3l-n3st/pulls">here</a> by adding your name and link to the members map in the pages/index.js file</p>
-            <p>on anywhere on your website, include the links /prev and /next to link forwards and backwards in the webring</p>
+            <p>on anywhere on your website, include the links https://d3l-n3st.vercel.app/prev and https://d3l-n3st.vercel.app/next to link forwards and backwards in the webring</p>
             <p>the webring is currently invite only</p>
+            <p>try out the webring here: <a href="https://d3l-n3st.vercel.app/prev">prev</a> <a href="https://d3l-n3st.vercel.app/next">next</a></p>
+            <p>members list:</p>
         </main>
         </>
     )
