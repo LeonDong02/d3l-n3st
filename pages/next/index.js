@@ -8,7 +8,7 @@ export default function Next({ context }) {
         <>
         {next.has(referer) ? (
             <div>
-
+                success
             </div>
         ) : (
             <div>
