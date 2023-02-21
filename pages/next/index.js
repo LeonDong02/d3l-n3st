@@ -7,7 +7,7 @@ export default function Next() {
         <>
         {next.has(referer) ? (
             <div>
-
+                
             </div>
         ) : (
             <div>
