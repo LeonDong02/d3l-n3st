@@ -1,7 +1,11 @@
+import React, { useEffect } from 'react';
 import { prev } from '../../src/members.js';
 
 export default function Next() {
-    var referer = document.referrer;
+    
+    useEffect(() => {
+        var referer = document.referrer;
+    }, []);
 
     return (
         <>
