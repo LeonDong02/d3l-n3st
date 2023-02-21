@@ -1,29 +1,25 @@
 import { next } from '../../src/members.js';
 
-export default function Home({ referrer }) {
+export async function getServerSideProps(context) {
+    var referrer = context.req.headers.referer;
 
-    return (
-        <>
-        {next.has(referrer) ? (
-            <div>
-                <a href={next.get(referrer)}>to next</a> 
-            </div>
-        ) : (
-            <div>
-                <div>
-                the previous website was not part of the webring
-                </div>
-                <div>
-                    return <a href="/">home</a>
-                </div>
-            </div>
-        )}
-        </>
-    )
-}
+    if (next.has(referrer)) {
+        return {
+            redirect: {
+                destination: next.get(referrer),
+                permanent: false,
+            },
+        }
+    } else {
+        return {
+            redirect: {
+                destination: '/notamember',
+                permanent: false,
+            },
+        }
+    }
 
-export function getServerSideProps(context) {
     return {
-        props: {referrer: context.req.headers.referer},
+        props: {},
     };
 }
