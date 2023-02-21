@@ -1,6 +1,7 @@
 import { next } from '../../src/members.js';
 
 export default function Home({ referrer }) {
+    console.log(referrer);
 
     return (
         <>
