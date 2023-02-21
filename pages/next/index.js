@@ -1,13 +1,12 @@
 import { next } from '../../src/members.js';
 
 export default function Home({ referrer }) {
-    console.log(referrer);
 
     return (
         <>
         {next.has(referrer) ? (
             <div>
-                <a href={next[referrer]}>to next</a> 
+                <a href={next.get(referrer)}>to next</a> 
             </div>
         ) : (
             <div>
