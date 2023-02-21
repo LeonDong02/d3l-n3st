@@ -17,12 +17,12 @@ export async function getServerSideProps(context) {
     } else {
         console.log(referrer);
 
-        return {
-            redirect: {
-                destination: '/notmember',
-                permanent: false,
-            },
-        }
+        // return {
+        //     redirect: {
+        //         destination: '/notmember',
+        //         permanent: false,
+        //     },
+        // }
     }
     
     return {
