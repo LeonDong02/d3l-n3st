@@ -2,11 +2,8 @@ import React, { useEffect } from 'react';
 import { prev } from '../../src/members.js';
 
 export default function Next() {
+    var referer = context.req.headers.referrer;
     
-    useEffect(() => {
-        var referer = document.referrer;
-    }, []);
-
     return (
         <>
         {prev.has(referer) ? (
