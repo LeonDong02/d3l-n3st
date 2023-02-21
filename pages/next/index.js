@@ -1,6 +1,10 @@
 import { next } from '../../src/members.js';
 
-export default async function getServerSideProps(context) {
+export default function Home() {
+    return (<></>)
+}
+
+export async function getServerSideProps(context) {
     var referrer = context.req.headers.referer;
 
     if (next.has(referrer)) {
@@ -18,7 +22,7 @@ export default async function getServerSideProps(context) {
             },
         }
     }
-
+    
     return {
         props: {},
     };
