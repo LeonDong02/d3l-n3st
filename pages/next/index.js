@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { next } from '../../src/members.js';
 
-export default function Next() {
+export default function Next({ context }) {
     var referer = context.req.headers.referrer;
 
     return (
@@ -22,4 +22,10 @@ export default function Next() {
         )}
         </>
     )
+}
+
+export function getServerSideProps(context) {
+    return {
+        props: {},
+    };
 }
