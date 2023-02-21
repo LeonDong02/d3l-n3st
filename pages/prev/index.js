@@ -1,7 +1,6 @@
 import { prev } from '../../src/members.js';
 
-export default function Home(context) {
-    var referrer = context.req.headers.referrer;
+export default function Home({ referrer }) {
 
     return (
         <>
@@ -15,7 +14,7 @@ export default function Home(context) {
                 the previous website was not part of the webring
                 </div>
                 <div>
-                    return <a href="https://d3l-n3st.vercel.app/">home</a>
+                    return <a href="/">home</a>
                 </div>
             </div>
         )}
@@ -25,6 +24,6 @@ export default function Home(context) {
 
 export function getServerSideProps(context) {
     return {
-        props: {},
+        props: {referrer: context.req.headers.referer},
     };
 }
