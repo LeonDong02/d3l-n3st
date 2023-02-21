@@ -7,7 +7,7 @@ export default function Home({ referrer }) {
         <>
         {next.has(referrer) ? (
             <div>
-                {next[referrer]}
+                <a href={next[referrer]}>to next</a> 
             </div>
         ) : (
             <div>

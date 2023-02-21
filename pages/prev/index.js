@@ -6,7 +6,7 @@ export default function Home({ referrer }) {
         <>
         {prev.has(referrer) ? (
             <div>
-                {prev[referrer]}
+                <a href={prev[referrer]}>to prev</a> 
             </div>
         ) : (
             <div>
