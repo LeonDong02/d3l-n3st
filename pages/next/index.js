@@ -1,6 +1,6 @@
 import { next } from '../../src/members.js';
 
-export async function getServerSideProps(context) {
+export default async function getServerSideProps(context) {
     var referrer = context.req.headers.referer;
 
     if (next.has(referrer)) {
