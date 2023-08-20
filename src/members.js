@@ -4,7 +4,6 @@ members.set('LEON', 'https://www.leondong.com/');
 members.set('TRI', 'https://www.triho.dev/');
 members.set('EDDY', 'https://www.eddyguo.ca/');
 members.set('BRIAN', 'https://briantu.tech/');
-members.set('JOSEPHINE', 'https://josephine-widjaja.com/');
 members.set('ANNIE', 'https://www.anniesun.ca/');
 // ADD YOUR NAME AND LINK ABOVE
 
