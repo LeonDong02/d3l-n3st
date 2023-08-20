@@ -4,7 +4,7 @@ members.set('LEON', 'https://www.leondong.com/');
 members.set('TRI', 'https://www.triho.dev/');
 members.set('EDDY', 'https://www.eddyguo.ca/');
 members.set('BRIAN', 'https://briantu.tech/');
-members.set('ANNIE', 'https://www.anniesun.ca/');
+members.set('ANNIE', 'https://anniesun.ca/');
 // ADD YOUR NAME AND LINK ABOVE
 
 var temp = [];
